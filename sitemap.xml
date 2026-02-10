@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <!-- Главная страница -->
   <url>
     <loc>https://prog-re-eis.github.io/site-app/</loc>
@@ -15,88 +16,96 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://prog-re-eis.github.io/site-app/articles/ais-a.html</loc>
     <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://prog-re-eis.github.io/site-app/articles/bos.html</loc>
     <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://prog-re-eis.github.io/site-app/articles/cons-online.html</loc>
     <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://prog-re-eis.github.io/site-app/articles/contacts.html</loc>
     <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://prog-re-eis.github.io/site-app/articles/documents.html</loc>
     <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>  <!-- чуть ниже, т.к. это скорее справочный раздел -->
   </url>
+
   <url>
     <loc>https://prog-re-eis.github.io/site-app/articles/equilibrium.html</loc>
     <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://prog-re-eis.github.io/site-app/articles/feedback-bos.html</loc>
-    <lastmod>2026-02-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+
   <url>
     <loc>https://prog-re-eis.github.io/site-app/articles/feedback-stroke.html</loc>
     <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>  <!-- отзывы — чуть ниже приоритет -->
   </url>
+
   <url>
     <loc>https://prog-re-eis.github.io/site-app/articles/motivation.html</loc>
     <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://prog-re-eis.github.io/site-app/articles/neuroplasticity.html</loc>
     <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>  <!-- важная теоретическая статья → выше -->
   </url>
+
   <url>
     <loc>https://prog-re-eis.github.io/site-app/articles/spinal-injury-book.html</loc>
     <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
+
   <url>
     <loc>https://prog-re-eis.github.io/site-app/articles/spinal-injury.html</loc>
     <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>  <!-- ключевая тема сайта -->
   </url>
+
   <url>
     <loc>https://prog-re-eis.github.io/site-app/articles/stroke-book.html</loc>
     <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
+
   <url>
     <loc>https://prog-re-eis.github.io/site-app/articles/stroke-rehab.html</loc>
     <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>  <!-- ключевая тема сайта -->
   </url>
+
 </urlset>
