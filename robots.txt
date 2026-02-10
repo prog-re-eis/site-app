@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://prog-re-eis.github.io/site-app/sitemap.xml
