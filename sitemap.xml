@@ -127,5 +127,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
+<url>
+    <loc>https://prog-re-eis.github.io/site-app/articles/edema.html</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
