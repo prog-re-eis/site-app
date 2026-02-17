@@ -289,3 +289,122 @@ h1 {
         }
     }
 </style>
+.floating-buttons {
+    right: 10px;
+}
+
+@media (max-width: 480px) {
+    .floating-whatsapp-btn span,
+    .floating-telegram-btn span {
+        display: none;   /* убираем текст */
+    }
+
+    .floating-whatsapp-btn,
+    .floating-telegram-btn {
+        width: 52px;
+        height: 52px;
+        padding: 0;
+        border-radius: 50%;
+        justify-content: center;
+    }
+
+    .icon {
+        position: static;
+        transform: none;
+    }
+}
+
+.accordion-native details {
+    margin: 25px 0;
+    border-radius: 14px;
+    border: 1px solid #e3e6ea;
+    background: #f9fafb;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.accordion-native summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 18px 22px;
+    font-size: 18px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #ffffff, #f3f6f9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-native summary::-webkit-details-marker {
+    display: none; /* убрать стандартный треугольник */
+}
+
+.accordion-native summary:hover {
+    background: #eef3f8;
+}
+
+.accordion-native details[open] summary i {
+    transform: rotate(180deg);
+}
+
+.accordion-native summary i {
+    transition: transform 0.3s ease;
+}
+
+.details-content {
+    padding: 0 22px 22px 22px;
+    animation: fadeIn 0.4s ease;
+}
+
+.details-content ul {
+    padding-left: 18px;
+}
+
+.details-content li {
+    margin: 10px 0;
+}
+
+.details-content a {
+    text-decoration: none;
+    color: #1a4fa3;
+}
+
+.details-content a:hover {
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.big-section-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 18px 22px;
+    background: #f5f7fa;
+    border-radius: 14px;
+    border: 1px solid #e3e6ec;
+    text-decoration: none;
+    color: #222;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.25s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+
+.big-section-btn i {
+    color: #777;
+    transition: 0.25s;
+}
+
+.big-section-btn:hover {
+    background: #eef2f7;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+.big-section-btn:hover i {
+    transform: translateX(4px);
+}
