@@ -4,7 +4,7 @@
   <!-- Главная страница -->
   <url>
     <loc>https://prog-re-eis.github.io/site-app/</loc>
-    <lastmod>2026-02-28</lastmod>
+    <lastmod>2026-03-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -17,6 +17,13 @@
     <priority>0.8</priority>
   </url>
 
+    <url>
+    <loc>https://prog-re-eis.github.io/site-app/articles/sezam.html</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
   <url>
     <loc>https://prog-re-eis.github.io/site-app/articles/ais-a.html</loc>
     <lastmod>2026-02-19</lastmod>
