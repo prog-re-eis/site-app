@@ -124,16 +124,20 @@ ym(106754659, "init", {
         </details>
     </section>
 
-    <section class="accordion-native">
-        <details>
-            <summary><span>🆓 Помощь без оплаты</span><i class="fa-solid fa-chevron-down"></i></summary>
-            <div class="details-content">
-                <ul>
+  <section class="accordion-native">
+    <details>
+        <summary class="highlight-free-help">
+            <span> 👀 Помощь без оплаты</span>
+            <i class="fa-solid fa-chevron-down"></i>
+        </summary>
+        <div class="details-content">
+            <ul>
                     <li><a href="articles/ais-a.html">AIS-A — альтернативное управление Android</a></li>
+                   <li><a href="articles/sezam.html">Сезам —  устройство для восстановления движений пальцев  </a></li>
                 </ul>
-            </div>
-        </details>
-    </section>
+        </div>
+    </details>
+</section>
 
     <section class="accordion-native">
         <details>
@@ -249,7 +253,8 @@ ym(106754659, "init", {
 </div>
 
 <style>
-    .floating-buttons {
+
+  .floating-buttons {
         position: fixed;
         bottom: 30px;
         right: 30px;
@@ -331,10 +336,69 @@ ym(106754659, "init", {
     .floating-telegram-btn {
     background: #0088cc;         /* синий Telegram */
 }
+
+ /* Анимация мягкого привлечения внимания */
+
+
+@keyframes gentle-breathe {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 3px 10px rgba(0, 140, 210, 0.12);
+  }
+  50% {
+    transform: scale(1.035);
+    box-shadow: 0 8px 24px rgba(0, 140, 210, 0.28);
+  }
+}
+.accordion-native details {
+  overflow: visible;
+}
+
+.accordion-native summary {
+  overflow: visible;
+  position: relative;
+}
+
+.highlight-free-help {
+    
+  background: linear-gradient(135deg, #f4f9ff, #e9f3ff);
+  border: 1px solid #cfe4ff;
+  border-left: 6px solid #6aaeff;   /* мягкий акцент */
+  border-radius: 14px;
+  padding: 16px 20px;
+padding-left: calc(20px + 28px);
+  color: #0b3d6d;
+  font-weight: 600;
+  animation: gentle-breathe 6s ease-in-out infinite;
+  position: relative;
+  transition: all 0.35s ease;
+}
+
+/* hover */
+.highlight-free-help:hover {
+  background: linear-gradient(135deg, #e9f3ff, #dff0ff);
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 14px 30px rgba(0, 120, 255, 0.32);
+}
+
+
+
+/* опционально — метка */
+.highlight-free-help::after {
+  content: "поддержка";
+  position: absolute;
+  right: 14px;
+  top: -10px;
+  background: #6aaeff;
+  color: white;
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
 </style>
 
     <!-- Cloudflare Web Analytics -->
     <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "c8026ce3e4024ff9bdbcb37ca5e758ac"}'></script>
 </body>
 </html>
-
