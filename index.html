@@ -1,401 +1,901 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function(m,e,t,r,i,k,a){
-        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();
-        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=106754659', 'ym');
-
-    ym(106754659, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/106754659" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
- integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
- crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Re Eis БОС-терапия в Алматы — реабилитация и восстановление | Re-Eis</title>
+    <title>Re Eis Биофидбэк и медицинская реабилитация в Алматы | Re-Eis</title>
 
-  <meta name="description" content="Re Eis БОС-терапия и медицинская реабилитация в Алматы. Восстановление после инсульта, ЧМТ, травм позвоночника. Кабинет Re-Eis — консультации и помощь пациентам.">
-    <meta name="keywords" content="Re Eis, БОС-терапия, реабилитация после инсульта, боль в спине, головная боль, восстановление, реабилитолог">
+    <meta name="description" content="Re Eis БОС-терапия и медицинская реабилитация в Алматы. Восстановление после инсульта, ЧМТ, травм позвоночника. Бесплатные статьи и приложения для самостоятельного восстановления.">
+    <meta name="keywords" content="Re Eis, БОС-терапия, реабилитация после инсульта, боль в спине, головная боль, восстановление, реабилитолог, бесплатные приложения">
 
     <meta name="yandex-verification" content="502b144f9e8d58ee" />
-   <link rel="icon" href="./favicon.ico">
-<link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16">
-<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-    
+    <link rel="icon" href="./favicon.ico">
+    <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
 
     <!-- OpenGraph -->
     <meta property="og:title" content="Re-Eis — Кабинет реабилитолога и БОС-терапии в Алматы">
-    <meta property="og:description" content="Понятные статьи, БОС-терапия, реабилитация, восстановление после инсульта и травм, бесплатные цифровые инструменты для пациентов.">
+    <meta property="og:description" content="Бесплатные статьи и приложения для восстановления. Платная консультация реабилитолога, БОС-терапия в Алматы.">
     <meta property="og:image" content="https://prog-re-eis.github.io/site-app/img/social-preview.png">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Re-Eis">
     <meta property="og:locale" content="ru_RU">
 
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* ===== БАЗОВЫЕ СТИЛИ ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #1a2a3a;
+            background: #fafcff;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        a {
+            color: #1e5b8a;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== ХЕДЕР ===== */
+        header {
+            background: white;
+            border-radius: 16px;
+            padding: 25px 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            height: 60px;
+            width: auto;
+            flex-shrink: 0;
+        }
+
+        .site-heading h1 {
+            font-size: 1.5rem;
+            color: #0a2a44;
+            margin-bottom: 4px;
+        }
+
+        .site-heading .lead {
+            color: #4a6a8a;
+            font-size: 1rem;
+        }
+
+        .header-phone {
+            margin-left: auto;
+            background: #25D366;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.25s;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.25);
+        }
+
+        .header-phone:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.35);
+            text-decoration: none;
+        }
+
+        /* ===== КАРТОЧКИ ВЫБОРА ===== */
+        .choice-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin: 30px 0 40px;
+        }
+
+        .choice-card {
+            padding: 45px 35px;
+            border-radius: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .choice-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+        }
+
+        .free-card {
+            background: linear-gradient(135deg, #f0f7ff, #e3eeff);
+            border-color: #b3d4ff;
+        }
+
+        .paid-card {
+            background: linear-gradient(135deg, #fff5f0, #ffe8dd);
+            border-color: #ffccb3;
+        }
+
+        .choice-card .icon {
+            font-size: 56px;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .choice-card h2 {
+            font-size: 1.6rem;
+            color: #0a2a44;
+            margin-bottom: 8px;
+        }
+
+        .choice-card p {
+            color: #3a5a7a;
+            font-size: 1.05rem;
+            margin-bottom: 20px;
+        }
+
+        .choice-btn {
+            display: inline-block;
+            padding: 14px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.25s;
+            font-size: 1.05rem;
+        }
+
+        .choice-btn:hover {
+            transform: scale(1.05);
+            text-decoration: none;
+        }
+
+        .choice-btn.free-btn {
+            background: white;
+            color: #1e5b8a;
+            border: 2px solid #1e5b8a;
+        }
+
+        .choice-btn.paid-btn {
+            background: #1e5b8a;
+            color: white;
+            border: 2px solid #1e5b8a;
+            box-shadow: 0 4px 15px rgba(30, 91, 138, 0.25);
+        }
+
+        .choice-btn.paid-btn:hover {
+            background: #0a4a7a;
+            box-shadow: 0 6px 25px rgba(30, 91, 138, 0.35);
+        }
+
+        /* ===== ОБЩИЕ БЛОКИ ===== */
+        .content-block {
+            margin: 40px 0;
+            padding: 35px 30px;
+            border-radius: 20px;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+
+        .free-content {
+            border-left: 6px solid #4a90d9;
+            background: #f8fbff;
+        }
+
+        .paid-content {
+            border-left: 6px solid #e67e22;
+            background: #fffaf8;
+        }
+
+        .content-block h2 {
+            font-size: 1.8rem;
+            color: #0a2a44;
+            margin-bottom: 25px;
+        }
+
+        .content-block h3 {
+            font-size: 1.2rem;
+            color: #1a4a6a;
+            margin: 20px 0 12px;
+        }
+
+        /* ===== СПИСКИ РЕСУРСОВ ===== */
+        .resource-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px 20px;
+        }
+
+        .resource-list li a {
+            display: block;
+            padding: 10px 14px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #1a3a5a;
+            transition: all 0.15s;
+            border-left: 3px solid transparent;
+        }
+
+        .resource-list li a:hover {
+            background: rgba(74, 144, 217, 0.08);
+            border-left-color: #4a90d9;
+            text-decoration: none;
+        }
+
+        .resource-list.single-column {
+            grid-template-columns: 1fr;
+        }
+
+        /* ===== УСЛУГИ (ПЛАТНЫЙ БЛОК) ===== */
+        .services-simple {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin: 15px 0 25px;
+        }
+
+        .service-item {
+            padding: 12px 16px;
+            background: white;
+            border-radius: 10px;
+            border: 1px solid #e8edf4;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .service-item:hover {
+            border-color: #e67e22;
+            background: #fffaf5;
+        }
+
+        .service-item .badge {
+            background: #e67e22;
+            color: white;
+            font-size: 0.7rem;
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-weight: 600;
+            margin-left: auto;
+        }
+
+        .service-item a {
+            color: #1a3a5a;
+            text-decoration: none;
+            flex: 1;
+        }
+
+        .service-item a:hover {
+            text-decoration: none;
+            color: #e67e22;
+        }
+
+        /* ===== CTA КНОПКИ ===== */
+        .cta-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 25px 0 20px;
+        }
+
+        .big-btn {
+            padding: 16px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.25s;
+            flex: 1;
+            text-align: center;
+            min-width: 200px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .big-btn:hover {
+            transform: translateY(-3px);
+            text-decoration: none;
+        }
+
+        .big-btn.primary {
+            background: #25D366;
+            color: white;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+
+        .big-btn.primary:hover {
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.4);
+        }
+
+        .big-btn.outline {
+            background: white;
+            color: #1a3a5a;
+            border: 2px solid #1a3a5a;
+        }
+
+        .big-btn.outline:hover {
+            background: #f0f5fa;
+        }
+
+        /* ===== TRUST-ФАКТОРЫ ===== */
+        .trust-mini {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+            padding: 18px 20px;
+            background: white;
+            border-radius: 14px;
+            border: 1px solid #e8edf4;
+        }
+
+        .trust-mini span {
+            padding: 5px 16px;
+            background: #f4f8fc;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: #2a4a6a;
+        }
+
+        /* ===== СОЦИАЛЬНЫЕ СЕТИ ===== */
+        .social-links {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 25px;
+            border-radius: 50px;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.25s;
+        }
+
+        .social-icon:hover {
+            transform: translateY(-3px);
+            text-decoration: none;
+        }
+
+        .social-icon.instagram {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+        }
+
+        .social-icon.youtube {
+            background: #ff0000;
+        }
+
+        /* ===== ФУТЕР ===== */
+        footer {
+            margin-top: 50px;
+            padding: 30px 20px;
+            border-top: 1px solid #e8edf4;
+            text-align: center;
+            color: #5a7a9a;
+            font-size: 0.9rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            color: #1a5b8a;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .note {
+            font-size: 0.85rem;
+            color: #7a8a9a;
+            margin-bottom: 8px;
+        }
+
+        /* ===== ПЛАВАЮЩИЕ КНОПКИ ===== */
+        .floating-buttons {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .floating-whatsapp-btn,
+        .floating-telegram-btn {
+            display: flex;
+            align-items: center;
+            background: #25D366;
+            color: white;
+            border-radius: 50px;
+            padding: 14px 20px 14px 60px;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            font-weight: 500;
+            font-size: 16px;
+            position: relative;
+        }
+
+        .floating-telegram-btn {
+            background: #0088cc;
+        }
+
+        .floating-whatsapp-btn:hover,
+        .floating-telegram-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            text-decoration: none;
+        }
+
+        .floating-buttons .icon {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .floating-buttons .icon svg {
+            width: 28px;
+            height: 28px;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        .floating-whatsapp-btn {
+            animation: pulse 2.5s infinite;
+        }
+
+        /* ===== МОБИЛЬНАЯ АДАПТАЦИЯ ===== */
+        @media (max-width: 768px) {
+            body { padding: 12px; }
+
+            .header-inner {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .header-phone {
+                margin-left: 0;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .site-heading h1 {
+                font-size: 1.2rem;
+            }
+
+            .choice-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .choice-card {
+                padding: 30px 20px;
+            }
+
+            .choice-card h2 {
+                font-size: 1.3rem;
+            }
+
+            .resource-list {
+                grid-template-columns: 1fr;
+            }
+
+            .services-simple {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-group {
+                flex-direction: column;
+            }
+
+            .big-btn {
+                min-width: auto;
+                padding: 14px 20px;
+            }
+
+            .content-block {
+                padding: 20px 16px;
+            }
+
+            .floating-buttons {
+                bottom: 15px;
+                right: 15px;
+                gap: 10px;
+            }
+
+            .floating-whatsapp-btn,
+            .floating-telegram-btn {
+                padding: 10px 16px 10px 50px;
+                font-size: 14px;
+            }
+
+            .floating-buttons .icon {
+                width: 34px;
+                height: 34px;
+                left: 10px;
+            }
+
+            .floating-buttons .icon svg {
+                width: 22px;
+                height: 22px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .choice-card .icon {
+                font-size: 40px;
+            }
+
+            .content-block h2 {
+                font-size: 1.4rem;
+            }
+
+            .social-links {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .social-icon {
+                justify-content: center;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
 
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "MedicalBusiness",
-  "name": "Re-Eis",
-  "url": "https://prog-re-eis.github.io/site-app/",
-  "logo": "https://prog-re-eis.github.io/site-app/img/logo.png",
-  "image": "https://prog-re-eis.github.io/site-app/img/logo.png",
-  "telephone": "+77078369603",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Алматы",
-    "addressCountry": "KZ"
-  }
-}
-</script>
+    {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Re-Eis",
+        "url": "https://prog-re-eis.github.io/site-app/",
+        "logo": "https://prog-re-eis.github.io/site-app/img/logo.png",
+        "image": "https://prog-re-eis.github.io/site-app/img/logo.png",
+        "telephone": "+77078369603",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Алматы",
+            "addressCountry": "KZ"
+        }
+    }
+    </script>
 </head>
 
 <body>
 
+    <!-- ===== YANDEX METRIKA ===== -->
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js?id=106754659", "ym");
 
-<noscript><div><img src="https://mc.yandex.ru/watch/106754659" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        ym(106754659, "init", {
+            defer: true,
+            webvisor: true,
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            ecommerce: "dataLayer"
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/106754659" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
 
-<header>
+    <!-- ===== ХЕДЕР ===== -->
+    <header>
     <div class="header-inner">
-       
-            <img src="img/logo.png" alt="Логотип Re-Eis" class="logo">
-        </a>
+        <img src="img/logo.png" alt="Логотип Re-Eis" class="logo">
 
         <div class="site-heading">
-            <h1>Биофидбэк и медицинская реабилитация в Алматы</h1>
-            <p class="lead">Помогаем понять своё тело, восстановиться после болезней и тренировать здоровье без сложных слов и лишних назначений.</p>
+            <h1>Биофидбэк и реабилитация в Алматы</h1>
+            <p class="lead">Помогаем понять своё тело, восстановиться после болезней и тренировать здоровье без лишних назначений.</p>
         </div>
+
+        <!-- Кнопка-звонок с подтверждением -->
+        <button onclick="makeCall('+77078369603')" class="header-phone" style="border: none; cursor: pointer; font-family: inherit;">
+            <i class="fas fa-phone"></i> Записаться
+        </button>
     </div>
 </header>
 
-<main itemscope itemtype="https://schema.org/MedicalBusiness">
+<script>
+function makeCall(phone) {
+    // Показываем подтверждение перед звонком
+    if (confirm(`📞 Позвонить по номеру ${phone}?`)) {
+        // Пытаемся открыть приложение для звонка
+        window.location.href = `tel:${phone}`;
+        
+        // Если открытие не удалось (на десктопе), показываем подсказку
+        setTimeout(() => {
+            // Проверяем, не остались ли мы на той же странице
+            // (если приложение не открылось)
+        }, 1000);
+    }
+}
 
-    <section class="reviews-section">
-        <h2>Реабилитация в Алматы: инсульт, ЧМТ, спинальные травмы, БОС</h2>
-        <p>Реабилитация движений, биофидбэк (биологическая обратная связь), работа с последствиями инсульта, спинальных травм, хронической болью, нарушениями баланса и другими состояниями. Пишем понятные статьи и делаем бесплатные приложения, чтобы люди могли лучше контролировать восстановление дома.</p>
-        <a href="articles/about.html" class="big-section-btn">
-            <span>⁉️ О нас</span>
-            <i class="fa-solid fa-chevron-right"></i>
-        </a>
-    </section>
+// Также обрабатываем другие ссылки "Записаться" на странице
+document.addEventListener('DOMContentLoaded', function() {
+    // Находим все ссылки с tel: и заменяем их на кнопки с обработчиком
+    document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+        const phone = link.getAttribute('href').replace('tel:', '');
+        const button = document.createElement('button');
+        button.innerHTML = link.innerHTML;
+        button.className = link.className;
+        button.style.cssText = link.style.cssText + '; border: none; cursor: pointer; font-family: inherit;';
+        button.onclick = function(e) {
+            e.preventDefault();
+            makeCall(phone);
+        };
+        link.parentNode.replaceChild(button, link);
+    });
+});
+</script>
 
-  <section class="services-section">
-    <h2>📑 Наши ключевые направления</h2>
-    
-    <ul class="services">
-        <li><a href="articles/bos.html">Биофидбэк(БОС-терапия)</a></li>
-        <li><a href="articles/cognitive.html">Когнитивная реабилитация</a></li>
-        <li><a href="articles/anxiety.html">Нейробиообратная связь при тревожности</a></li>
-        <li><a href="articles/stuttering.html">Заикание и нервные тики</a></li>
-        <li><a href="articles/choice.html">Мозг и выбор</a></li>
-        <li><a href="articles/stroke-rehab.html">Реабилитация после инсульта и ЧМТ</a></li>
-        <li><a href="articles/spinal-injury.html">Реабилитация после спинальной травмы</a></li>
-        <li><a href="articles/cons-online.html">Онлайн консультация</a></li>
-    </ul>
-</section>
+    <!-- ===== ОСНОВНОЙ КОНТЕНТ ===== -->
+    <main>
 
-    <section class="accordion-native">
-        <details>
-            <summary><span>📖 Полезные статьи для пациентов (простыми словами)</span><i class="fa-solid fa-chevron-down"></i></summary>
-            <div class="details-content">
-                <ul>
-                    <li><a href="articles/neuroplasticity.html">Нейропластичность</a></li>
-                    <li><a href="articles/motivation.html">Мотивация на восстановление</a></li>
-                    <li><a href="articles/equilibrium.html">Равновесие и головокружение</a></li>
-                    <li><a href="articles/edema.html">Отёк руки после инсульта</a></li>
-                    <li><a href="articles/multscl.html">Реабилитация при рассеянном склерозе</a></li>
+        <!-- ===== ВЫБОР ПУТИ ===== -->
+        <section class="choice-grid">
+            <!-- БЕСПЛАТНО -->
+            <div class="choice-card free-card">
+                <span class="icon">📚</span>
+                <h2>Самостоятельно</h2>
+                <p>Бесплатные статьи, приложения и упражнения для домашней реабилитации</p>
+                <a href="#free-section" class="choice-btn free-btn">
+                    <i class="fas fa-arrow-right"></i> Изучить
+                </a>
+            </div>
+
+            <!-- ПЛАТНО -->
+            <div class="choice-card paid-card">
+                <span class="icon">👨‍⚕️</span>
+                <h2>Консультация реабилитолога</h2>
+                <p>Индивидуальная помощь, БОС-терапия, диагностика и восстановление</p>
+                <a href="#paid-section" class="choice-btn paid-btn">
+                    <i class="fas fa-calendar-check"></i> Записаться
+                </a>
+            </div>
+        </section>
+
+        <!-- ===== БЛОК 1: БЕСПЛАТНЫЙ КОНТЕНТ ===== -->
+        <section id="free-section" class="content-block free-content">
+            <h2>🆓 Бесплатные ресурсы для тренировок</h2>
+
+            <!-- Приложения -->
+            <div class="resource-group">
+                <h3>📱 Наши приложения </h3>
+                <ul class="resource-list">
+                    <li><a href="articles/balancebooste.html"><i class="fas fa-arrow-right"></i> Balance Boost — улучшение баланса и координации</a></li>
+                    <li><a href="articles/sezam.html"><i class="fas fa-arrow-right"></i> Сезам — восстановление движений пальцев</a></li>
+                    <li><a href="articles/ais-a.html"><i class="fas fa-arrow-right"></i> AIS-A — альтернативное управление Android</a></li>
                 </ul>
             </div>
-        </details>
-    </section>
 
-  <section class="accordion-native">
-    <details>
-        <summary class="highlight-free-help">
-            <span> 👀 Помощь без оплаты</span>
-            <i class="fa-solid fa-chevron-down"></i>
-        </summary>
-        <div class="details-content">
-            <ul>
-                    <li><a href="articles/ais-a.html">AIS-A — альтернативное управление Android</a></li>
-                    <li><a href="articles/balancebooste.html">Balance Boost — приложение для  улучшения баланса, координации </a></li>
-                    <li><a href="articles/sezam.html">Сезам —  устройство для восстановления движений пальцев  </a></li>
-                </ul>
-        </div>
-    </details>
-</section>
-
-    <section class="accordion-native">
-        <details>
-            <summary><span>📚 Книги и материалы</span><i class="fa-solid fa-chevron-down"></i></summary>
-            <div class="details-content">
-                <ul>
-                    <li><a href="articles/stroke-book.html">Инсульт / ЧМТ</a></li>
-                    <li><a href="articles/spinal-injury-book.html">Спинальная травма</a></li>
+            <!-- Статьи -->
+            <div class="resource-group">
+                <h3>📖  Ответы на частые вопросы</h3>
+                <ul class="resource-list">
+                    <li><a href="articles/neuroplasticity.html"><i class="fas fa-arrow-right"></i> Нейропластичность</a></li>
+                    <li><a href="articles/motivation.html"><i class="fas fa-arrow-right"></i> Мотивация на восстановление</a></li>
+                    <li><a href="articles/equilibrium.html"><i class="fas fa-arrow-right"></i> Равновесие и головокружение</a></li>
+                    <li><a href="articles/edema.html"><i class="fas fa-arrow-right"></i> Отёк руки после инсульта</a></li>
+                    <li><a href="articles/multscl.html"><i class="fas fa-arrow-right"></i> Реабилитация при рассеянном склерозе</a></li>
                 </ul>
             </div>
-        </details>
-    </section>
 
-    <section class="reviews-section">
-        <a href="articles/feedback.html" class="big-section-btn">
-            <span>⭐ Отзывы наших пациентов</span>
-            <i class="fa-solid fa-chevron-right"></i>
-        </a>
-    </section>
+            <!-- Книги -->
+            <div class="resource-group">
+                <h3>📚 Книги и руководства</h3>
+                <ul class="resource-list single-column">
+                    <li><a href="articles/stroke-book.html"><i class="fas fa-arrow-right"></i> Инсульт / ЧМТ — руководство для пациентов</a></li>
+                    <li><a href="articles/spinal-injury-book.html"><i class="fas fa-arrow-right"></i> Спинальная травма — руководство для пациентов</a></li>
+                </ul>
+            </div>
 
-    <!-- TRUST -->
-    <section class="trust-section">
-        <h2>Наш подход</h2>
-        <ul class="trust-list">
-            <li>🧠 Основан на доказательной реабилитации</li>
-            <li>📚 Обучаем понимать своё состояние</li>
-            <li>🧩 Индивидуальные стратегии восстановления</li>
-            <li>🚫 Без навязывания процедур и курсов</li>
-            <li>💊 Без коммерческой зависимости от препаратов</li>
-            <li>🤝 Партнёрство, а не иерархия «врач — пациент»</li>
-        </ul>
-    </section>
+            <!-- Быстрый контакт для бесплатного потока -->
+            <div style="margin-top: 25px; padding: 15px; background: white; border-radius: 12px; text-align: center;">
+                <p style="color: #3a5a7a;">❓ Остались вопросы? <a href="tel:+77078369603" style="font-weight: 600;">Позвоните</a> или напишите в 
+                    <a href="https://wa.me/77078369603" target="_blank">WhatsApp</a>
+                </p>
+            </div>
+        </section>
 
-    <section class="contact-section">
-        <h2>📍 Как с нами связаться</h2>
-        <p>Принимаем в Алматы. Запись на консультацию, БОС-сессии или реабилитацию.</p>
+        <!-- ===== БЛОК 2: ПЛАТНЫЕ УСЛУГИ ===== -->
+        <section id="paid-section" class="content-block paid-content">
+            <h2>💼 Консультации и реабилитация</h2>
 
-        <ul class="contact-list">
-            <li><strong>Телефон / WhatsApp:</strong> <a href="tel:+77078369603">+7 (707) 836-96-03</a></li>
-            <li><strong>Email:</strong> <a href="mailto:reeisprog@gmail.com">reeisprog@gmail.com</a></li>
-        </ul>
+            <!-- Услуги -->
+            <div class="services-simple">
+                <div class="service-item">
+                    <span>🧠</span>
+                    <a href="articles/bos.html">БОС-терапия</a>
+                    <span class="badge">🔥 Популярное</span>
+                </div>
+                <div class="service-item">
+                    <span>🧩</span>
+                    <a href="articles/cognitive.html">Когнитивная реабилитация</a>
+                </div>
+                <div class="service-item">
+                    <span>🧘</span>
+                    <a href="articles/anxiety.html">Нейробиообратная связь при тревожности</a>
+                </div>
+                <div class="service-item">
+                    <span>🗣️</span>
+                    <a href="articles/stuttering.html">Заикание и нервные тики</a>
+                </div>
+                <div class="service-item">
+                    <span>🧠</span>
+                    <a href="articles/choice.html">Мозг и выбор</a>
+                </div>
+                <div class="service-item">
+                    <span>❤️</span>
+                    <a href="articles/stroke-rehab.html">Реабилитация после инсульта и ЧМТ</a>
+                </div>
+                <div class="service-item">
+                    <span>💪</span>
+                    <a href="articles/spinal-injury.html">Реабилитация после спинальной травмы</a>
+                </div>
+                <div class="service-item">
+                    <span>💻</span>
+                    <a href="articles/cons-online.html">Онлайн-консультация</a>
+                </div>
+            </div>
 
-        <a href="articles/contacts.html" class="big-section-btn">
-            <span>🧭 Адрес, график, подробнее как добраться?</span>
-            <i class="fa-solid fa-chevron-right"></i>
-        </a>
-    </section>
+            <!-- КЛЮЧЕВЫЕ КНОПКИ ДЛЯ ПЛАТНОГО ПОТОКА -->
+            <div class="cta-group">
+                <a href="articles/feedback.html" class="big-btn outline">
+                    <i class="fas fa-star"></i> Отзывы пациентов
+                </a>
+                <a href="tel:+77078369603" class="big-btn primary">
+                    <i class="fas fa-phone"></i> Записаться
+                </a>
+                <a href="articles/contacts.html" class="big-btn outline">
+                    <i class="fas fa-map-pin"></i> Адрес и график
+                </a>
+            </div>
 
-    <section class="social-section">
-        <h2>Мы в социальных сетях</h2>
-        <p>Присоединяйтесь к нам, будьте в курсе новых событий</p>
-        <div class="social-links">
-            <a href="https://www.instagram.com/_re_eis?igsh=ZGUzMzM3NWJiOQ==" target="_blank" rel="noopener noreferrer" class="social-icon instagram">
-                <i class="fab fa-instagram"></i> Instagram
-            </a>
-            <a href="https://www.youtube.com/channel/UCm-LBB-N8XcIkLKo-SkFngg" target="_blank" rel="noopener noreferrer" class="social-icon youtube">
-                <i class="fab fa-youtube"></i> YouTube
-            </a>
-        </div>
-    </section>
+            <!-- TRUST-ФАКТОРЫ -->
+            <div class="trust-mini">
+                <span>🧠 Доказательная реабилитация</span>
+                <span>🤝 Индивидуальный подход</span>
+                <span>💊 Без навязывания препаратов</span>
+                <span>📚 Обучаем понимать своё состояние</span>
+                <span>🧩 Индивидуальные стратегии</span>
+            </div>
 
-</main>
+            <!-- Альтернативный контакт -->
+            <div style="margin-top: 20px; padding: 15px; background: white; border-radius: 12px; text-align: center;">
+                <p style="color: #3a5a7a;">
+                    <i class="fas fa-envelope"></i> 
+                    <a href="mailto:reeisprog@gmail.com">reeisprog@gmail.com</a> &nbsp;|&nbsp;
+                    <i class="fab fa-whatsapp"></i> 
+                    <a href="https://wa.me/77078369603" target="_blank">WhatsApp</a> &nbsp;|&nbsp;
+                    <i class="fab fa-telegram"></i> 
+                    <a href="https://t.me/+77078369603" target="_blank">Telegram</a>
+                </p>
+            </div>
+        </section>
 
-<footer>
+        <!-- ===== СОЦИАЛЬНЫЕ СЕТИ ===== -->
+        <section class="content-block" style="background: white; border-left: 6px solid #e1306c;">
+            <h2>🌐 Мы в социальных сетях</h2>
+            <p style="color: #3a5a7a; margin-bottom: 15px;">Присоединяйтесь, чтобы быть в курсе новых материалов и событий</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/_re_eis?igsh=ZGUzMzM3NWJiOQ==" target="_blank" rel="noopener noreferrer" class="social-icon instagram">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://www.youtube.com/channel/UCm-LBB-N8XcIkLKo-SkFngg" target="_blank" rel="noopener noreferrer" class="social-icon youtube">
+                    <i class="fab fa-youtube"></i> YouTube
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== ФУТЕР ===== -->
+    <footer>
         <div class="footer-links">
-            <a href="articles/documents.html">Лицензии и документы</a> •
-            <a href="articles/contacts.html">Контакты и адрес</a> •
+            <a href="articles/documents.html">Лицензии и документы</a>
+            <a href="articles/contacts.html">Контакты и адрес</a>
             <a href="articles/about.html">О нас</a>
         </div>
         <p class="note">Материалы сайта носят информационный характер и не заменяют консультацию врача.</p>
-        <p>© 2025–2026 Кабинет реабилитолога. Все права защищены.</p>
+        <p>© 2026 Кабинет реабилитолога. Все права защищены.</p>
     </footer>
 
-    
-<!-- Плавающие кнопки WhatsApp + Telegram -->
-<div class="floating-buttons">
-    <!-- WhatsApp (главная, правее) -->
-    <a href="https://wa.me/77078369603?text=Здравствуйте!%20Хочу%20записаться%20на%20приём%20к%20реабилитологу%20или%20задать%20вопрос." 
-       target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" title="Написать в WhatsApp">
-        <div class="icon">
-            <svg width="800px" height="800px" viewBox="-1.5 0 259 259" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
-    <g>
-        <path d="M67.6631045,221.823373 L71.8484512,223.916047 C89.2873956,234.379413 108.819013,239.262318 128.350631,239.262318 L128.350631,239.262318 C189.735716,239.262318 239.959876,189.038158 239.959876,127.653073 C239.959876,98.3556467 228.101393,69.7557778 207.17466,48.8290445 C186.247927,27.9023111 158.345616,16.0438289 128.350631,16.0438289 C66.9655467,16.0438289 16.7413867,66.2679889 17.4389445,128.350631 C17.4389445,149.277365 23.7169645,169.50654 34.1803311,186.945485 L36.9705622,191.130831 L25.8096378,232.28674 L67.6631045,221.823373 Z" fill="#00E676">
+    <!-- ===== ПЛАВАЮЩИЕ КНОПКИ ===== -->
+    <div class="floating-buttons">
+        <!-- WhatsApp -->
+        <a href="https://wa.me/77078369603?text=Здравствуйте!%20Хочу%20записаться%20на%20приём%20к%20реабилитологу%20или%20задать%20вопрос." 
+           target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" title="Написать в WhatsApp">
+            <div class="icon">
+                <svg viewBox="-1.5 0 259 259" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M67.6631045,221.823373 L71.8484512,223.916047 C89.2873956,234.379413 108.819013,239.262318 128.350631,239.262318 C189.735716,239.262318 239.959876,189.038158 239.959876,127.653073 C239.959876,98.3556467 228.101393,69.7557778 207.17466,48.8290445 C186.247927,27.9023111 158.345616,16.0438289 128.350631,16.0438289 C66.9655467,16.0438289 16.7413867,66.2679889 17.4389445,128.350631 C17.4389445,149.277365 23.7169645,169.50654 34.1803311,186.945485 L36.9705622,191.130831 L25.8096378,232.28674 L67.6631045,221.823373 Z" fill="#00E676"/>
+                    <path d="M219.033142,37.66812 C195.316178,13.2535978 162.530962,0 129.048189,0 C57.8972956,0 0.697557778,57.8972956 1.39511556,128.350631 C1.39511556,150.67248 7.67313556,172.296771 18.1365022,191.828389 L0,258.096378 L67.6631045,240.657433 C86.4971645,251.1208 107.423898,256.003705 128.350631,256.003705 C198.803967,256.003705 256.003705,198.106409 256.003705,127.653073 C256.003705,93.4727423 242.750107,61.3850845 219.033142,37.66812 Z M129.048189,234.379413 C110.214129,234.379413 91.380069,229.496509 75.3362401,219.7307 L71.1508934,217.638027 L30.6925422,228.101393 L41.1559089,188.3406 L38.3656778,184.155253 C7.67313556,134.628651 22.3218489,69.05822 72.5460089,38.3656778 C122.770169,7.67313556 187.643042,22.3218489 218.335585,72.5460089 C249.028127,122.770169 234.379413,187.643042 184.155253,218.335585 C168.111425,228.798951 148.579807,234.379413 129.048189,234.379413 Z M190.433273,156.9505 L182.760138,153.462711 C182.760138,153.462711 171.599213,148.579807 164.623636,145.092018 C163.926078,145.092018 163.22852,144.39446 162.530962,144.39446 C160.438289,144.39446 159.043173,145.092018 157.648058,145.789576 C157.648058,145.789576 156.9505,146.487133 147.184691,157.648058 C146.487133,159.043173 145.092018,159.740731 143.696902,159.740731 L142.999345,159.740731 C142.301787,159.740731 140.906671,159.043173 140.209113,158.345616 L136.721325,156.9505 C129.048189,153.462711 122.072611,149.277365 116.492149,143.696902 C115.097033,142.301787 113.00436,140.906671 111.609245,139.511556 C106.72634,134.628651 101.843436,129.048189 98.3556467,122.770169 L97.658089,121.375053 C96.9605312,120.677496 96.9605312,119.979938 96.2629734,118.584822 C96.2629734,117.189707 96.2629734,115.794591 96.9605312,115.097033 C96.9605312,115.097033 99.7507623,111.609245 101.843436,109.516571 C103.238551,108.121456 103.936109,106.028782 105.331225,104.633667 C106.72634,102.540993 107.423898,99.7507623 106.72634,97.658089 C106.028782,94.1703001 97.658089,75.3362401 95.5654156,71.1508934 C94.1703001,69.05822 92.7751845,68.3606623 90.6825112,67.6631045 L88.5898378,67.6631045 C87.1947223,67.6631045 85.1020489,67.6631045 83.0093756,67.6631045 C81.6142601,67.6631045 80.2191445,68.3606623 78.8240289,68.3606623 L78.1264712,69.05822 C76.7313556,69.7557778 75.3362401,71.1508934 73.9411245,71.8484512 C72.5460089,73.2435667 71.8484512,74.6386823 70.4533356,76.0337978 C65.5704312,82.3118178 62.7802,89.9849534 62.7802,97.658089 C62.7802,103.238551 64.1753156,108.819013 66.2679889,113.701918 L66.9655467,115.794591 C73.2435667,129.048189 81.6142601,140.906671 92.7751845,151.370038 L95.5654156,154.160269 C97.658089,156.252942 99.7507623,157.648058 101.145878,159.740731 C115.794591,172.296771 132.535978,181.365022 151.370038,186.247927 C153.462711,186.945485 156.252942,186.945485 158.345616,187.643042 C160.438289,187.643042 163.22852,187.643042 165.321193,187.643042 C168.808982,187.643042 172.994329,186.247927 175.78456,184.852811 C177.877233,183.457696 179.272349,183.457696 180.667465,182.06258 L182.06258,180.667465 C183.457696,179.272349 184.852811,178.574791 186.247927,177.179676 C187.643042,175.78456 189.038158,174.389445 189.735716,172.994329 C191.130831,170.204098 191.828389,166.716309 192.525947,163.22852 C192.525947,161.833405 192.525947,159.740731 192.525947,158.345616 C192.525947,158.345616 191.828389,157.648058 190.433273,156.9505 Z" fill="#FFFFFF"/>
+                </svg>
+            </div>
+            <span>WhatsApp</span>
+        </a>
 
-</path>
-        <path d="M219.033142,37.66812 C195.316178,13.2535978 162.530962,0 129.048189,0 C57.8972956,0 0.697557778,57.8972956 1.39511556,128.350631 C1.39511556,150.67248 7.67313556,172.296771 18.1365022,191.828389 L0,258.096378 L67.6631045,240.657433 C86.4971645,251.1208 107.423898,256.003705 128.350631,256.003705 L128.350631,256.003705 C198.803967,256.003705 256.003705,198.106409 256.003705,127.653073 C256.003705,93.4727423 242.750107,61.3850845 219.033142,37.66812 Z M129.048189,234.379413 L129.048189,234.379413 C110.214129,234.379413 91.380069,229.496509 75.3362401,219.7307 L71.1508934,217.638027 L30.6925422,228.101393 L41.1559089,188.3406 L38.3656778,184.155253 C7.67313556,134.628651 22.3218489,69.05822 72.5460089,38.3656778 C122.770169,7.67313556 187.643042,22.3218489 218.335585,72.5460089 C249.028127,122.770169 234.379413,187.643042 184.155253,218.335585 C168.111425,228.798951 148.579807,234.379413 129.048189,234.379413 Z M190.433273,156.9505 L182.760138,153.462711 C182.760138,153.462711 171.599213,148.579807 164.623636,145.092018 C163.926078,145.092018 163.22852,144.39446 162.530962,144.39446 C160.438289,144.39446 159.043173,145.092018 157.648058,145.789576 L157.648058,145.789576 C157.648058,145.789576 156.9505,146.487133 147.184691,157.648058 C146.487133,159.043173 145.092018,159.740731 143.696902,159.740731 L142.999345,159.740731 C142.301787,159.740731 140.906671,159.043173 140.209113,158.345616 L136.721325,156.9505 L136.721325,156.9505 C129.048189,153.462711 122.072611,149.277365 116.492149,143.696902 C115.097033,142.301787 113.00436,140.906671 111.609245,139.511556 C106.72634,134.628651 101.843436,129.048189 98.3556467,122.770169 L97.658089,121.375053 C96.9605312,120.677496 96.9605312,119.979938 96.2629734,118.584822 C96.2629734,117.189707 96.2629734,115.794591 96.9605312,115.097033 C96.9605312,115.097033 99.7507623,111.609245 101.843436,109.516571 C103.238551,108.121456 103.936109,106.028782 105.331225,104.633667 C106.72634,102.540993 107.423898,99.7507623 106.72634,97.658089 C106.028782,94.1703001 97.658089,75.3362401 95.5654156,71.1508934 C94.1703001,69.05822 92.7751845,68.3606623 90.6825112,67.6631045 L88.5898378,67.6631045 C87.1947223,67.6631045 85.1020489,67.6631045 83.0093756,67.6631045 C81.6142601,67.6631045 80.2191445,68.3606623 78.8240289,68.3606623 L78.1264712,69.05822 C76.7313556,69.7557778 75.3362401,71.1508934 73.9411245,71.8484512 C72.5460089,73.2435667 71.8484512,74.6386823 70.4533356,76.0337978 C65.5704312,82.3118178 62.7802,89.9849534 62.7802,97.658089 L62.7802,97.658089 C62.7802,103.238551 64.1753156,108.819013 66.2679889,113.701918 L66.9655467,115.794591 C73.2435667,129.048189 81.6142601,140.906671 92.7751845,151.370038 L95.5654156,154.160269 C97.658089,156.252942 99.7507623,157.648058 101.145878,159.740731 C115.794591,172.296771 132.535978,181.365022 151.370038,186.247927 C153.462711,186.945485 156.252942,186.945485 158.345616,187.643042 L158.345616,187.643042 C160.438289,187.643042 163.22852,187.643042 165.321193,187.643042 C168.808982,187.643042 172.994329,186.247927 175.78456,184.852811 C177.877233,183.457696 179.272349,183.457696 180.667465,182.06258 L182.06258,180.667465 C183.457696,179.272349 184.852811,178.574791 186.247927,177.179676 C187.643042,175.78456 189.038158,174.389445 189.735716,172.994329 C191.130831,170.204098 191.828389,166.716309 192.525947,163.22852 C192.525947,161.833405 192.525947,159.740731 192.525947,158.345616 C192.525947,158.345616 191.828389,157.648058 190.433273,156.9505 Z" fill="#FFFFFF">
-
-</path>
-    </g>
-</svg>
-        </div>
-        <span>WhatsApp</span>
-    </a>
-
-    <!-- Telegram (левее) -->
-    <a href="https://t.me/+77078369603" 
-       target="_blank" rel="noopener noreferrer" class="floating-telegram-btn" title="Написать в Telegram">
-        <div class="icon">
-            <!-- твой текущий SVG Telegram -->
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="16" cy="16" r="14" fill="url(#paint0_linear_87_7225)"/>
-                <path d="M22.9866 10.2088C23.1112 9.40332 22.3454 8.76755 21.6292 9.082L7.36482 15.3448C6.85123 15.5703 6.8888 16.3483 7.42147 16.5179L10.3631 17.4547C10.9246 17.6335 11.5325 17.541 12.0228 17.2023L18.655 12.6203C18.855 12.4821 19.073 12.7665 18.9021 12.9426L14.1281 17.8646C13.665 18.3421 13.7569 19.1512 14.314 19.5005L19.659 22.8523C20.2585 23.2282 21.0297 22.8506 21.1418 22.1261L22.9866 10.2088Z" fill="white"/>
-                <defs>
-                    <linearGradient id="paint0_linear_87_7225" x1="16" y1="2" x2="16" y2="30" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#37BBFE"/>
-                        <stop offset="1" stop-color="#007DBB"/>
-                    </linearGradient>
-                </defs>
-            </svg>
-        </div>
-        <span>Telegram</span>
-    </a>
-</div>
-
-<style>
-
-  .floating-buttons {
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        z-index: 9999;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .floating-whatsapp-btn, .floating-telegram-btn {
-        display: flex;
-        align-items: center;
-        background: #25D366;          /* для WhatsApp */
-        color: white;
-        border-radius: 50px;
-        padding: 14px 20px 14px 60px;
-        text-decoration: none;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.25);
-        transition: all 0.3s ease;
-        font-weight: 500;
-        font-size: 16px;
-        position: relative;
-    }
-
-    .floating-telegram-btn {
-    animation: pulse 4s infinite;
-    animation-delay: 1.5s;          /* начинается позже */
-}
-
-/* или даже отдельная более мягкая анимация */
-@keyframes pulse-soft {
-    0%   { box-shadow: 0 0 0 0 rgba(0, 136, 204, 0.4); }
-    70%  { box-shadow: 0 0 0 12px rgba(0, 136, 204, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(0, 136, 204, 0); }
-}
-
-.floating-telegram-btn { animation: pulse-soft 4s infinite; }
-
-    .floating-whatsapp-btn:hover, .floating-telegram-btn:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-    }
-
-    .icon {
-        position: absolute;
-        left: 12px;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 40px;
-        height: 40px;
-        background: white;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #25D366;               /* для WhatsApp */
-    }
-
-    .floating-telegram-btn .icon {
-        color: #0088cc;
-    }
-
-    @keyframes pulse {
-        0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-        70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
-        100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
-    }
-
-    .floating-whatsapp-btn { animation: pulse 2s infinite; }
-
-    @media (max-width: 768px) {
-        .floating-buttons { bottom: 20px; right: 20px; gap: 12px; }
-        .floating-whatsapp-btn, .floating-telegram-btn {
-            padding: 12px 18px 12px 55px;
-            font-size: 15px;
-        }
-        .icon { width: 36px; height: 36px; left: 10px; }
-    }
-    .floating-telegram-btn {
-    background: #0088cc;         /* синий Telegram */
-}
-
- /* Анимация мягкого привлечения внимания */
-
-
-@keyframes gentle-breathe {
-  0%, 100% {
-    transform: scale(1);
-    box-shadow: 0 3px 10px rgba(0, 140, 210, 0.12);
-  }
-  50% {
-    transform: scale(1.035);
-    box-shadow: 0 8px 24px rgba(0, 140, 210, 0.28);
-  }
-}
-.accordion-native details {
-  overflow: visible;
-}
-
-.accordion-native summary {
-  overflow: visible;
-  position: relative;
-}
-
-.highlight-free-help {
-    
-  background: linear-gradient(135deg, #f4f9ff, #e9f3ff);
-  border: 1px solid #cfe4ff;
-  border-left: 6px solid #6aaeff;   /* мягкий акцент */
-  border-radius: 14px;
-  padding: 16px 20px;
-padding-left: calc(20px + 28px);
-  color: #0b3d6d;
-  font-weight: 600;
-  animation: gentle-breathe 6s ease-in-out infinite;
-  position: relative;
-  transition: all 0.35s ease;
-}
-
-/* hover */
-.highlight-free-help:hover {
-  background: linear-gradient(135deg, #e9f3ff, #dff0ff);
-  transform: translateY(-2px) scale(1.01);
-  box-shadow: 0 14px 30px rgba(0, 120, 255, 0.32);
-}
-
-
-
-/* опционально — метка */
-.highlight-free-help::after {
-  content: "поддержка";
-  position: absolute;
-  right: 14px;
-  top: -10px;
-  background: #6aaeff;
-  color: white;
-  font-size: 11px;
-  padding: 4px 10px;
-  border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-</style>
+        <!-- Telegram -->
+        <a href="https://t.me/+77078369603" 
+           target="_blank" rel="noopener noreferrer" class="floating-telegram-btn" title="Написать в Telegram">
+            <div class="icon">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="14" fill="url(#paint0_linear_87_7225)"/>
+                    <path d="M22.9866 10.2088C23.1112 9.40332 22.3454 8.76755 21.6292 9.082L7.36482 15.3448C6.85123 15.5703 6.8888 16.3483 7.42147 16.5179L10.3631 17.4547C10.9246 17.6335 11.5325 17.541 12.0228 17.2023L18.655 12.6203C18.855 12.4821 19.073 12.7665 18.9021 12.9426L14.1281 17.8646C13.665 18.3421 13.7569 19.1512 14.314 19.5005L19.659 22.8523C20.2585 23.2282 21.0297 22.8506 21.1418 22.1261L22.9866 10.2088Z" fill="white"/>
+                    <defs>
+                        <linearGradient id="paint0_linear_87_7225" x1="16" y1="2" x2="16" y2="30" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#37BBFE"/>
+                            <stop offset="1" stop-color="#007DBB"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <span>Telegram</span>
+        </a>
+    </div>
 
     <!-- Cloudflare Web Analytics -->
     <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "c8026ce3e4024ff9bdbcb37ca5e758ac"}'></script>
+
 </body>
 </html>
